@@ -1,4 +1,5 @@
-// Завдання 1
+// Завдання 1//
+
 function eatFood(hamburger, fries) {
     if (hamburger > 3 && fries > 0) {
       console.log('Ми поїли');
@@ -7,23 +8,22 @@ function eatFood(hamburger, fries) {
     }
   }
   
-  let hamburger = 4;
-  let fries = 1;
-  eatFood(hamburger, fries);
+  eatFood(4, 1);
   
   
-  // Завдання 2
+  // Завдання 2//
+
   function checkPrice(price) {
     if (price > 999 && price < 1901) {
       console.log('Ціна товару знаходиться між 1000 та 1900');
     }
   }
   
-  let price = 1000;
-  checkPrice(price);
+  checkPrice(1000);
   
   
-  // Завдання 3
+  // Завдання 3//
+
   function checkPriceRange(price1) {
     if (price1 < 1901 && price1 > 999) {
       console.log('Ціна не в межах');
@@ -32,11 +32,11 @@ function eatFood(hamburger, fries) {
     }
   }
   
-  let price1 = 1000;
-  checkPriceRange(price1);
+  checkPriceRange(1000);
   
   
-  // Завдання 4
+  // Завдання 4//
+
   function getSeasonName(season) {
     switch (season) {
       case 1:
@@ -48,13 +48,14 @@ function eatFood(hamburger, fries) {
       default:
         return 'Fall';
     }
+    console.log(season);
   }
   
-  let season = 4;
-  console.log(getSeasonName(season));
+  console.log(getSeasonName(4));
   
   
-  // Завдання 5
+  // Завдання 5//
+
   function findMiddleNumber(a, b, c) {
     let middle;
   
@@ -79,10 +80,7 @@ function eatFood(hamburger, fries) {
     return middle;
   }
   
-  let a = 5;
-  let b = 10;
-  let c = 7;
-  console.log('Середнє число: ' + findMiddleNumber(a, b, c));
+  console.log(findMiddleNumber(10, 49, 15));
   
   
   // Завдання 6
@@ -107,11 +105,11 @@ function eatFood(hamburger, fries) {
     }
   }
   
-  let week = 7;
-  console.log(getDayOfWeek(week));
+  console.log(getDayOfWeek(7));
   
   
-  // Завдання 7
+  // Завдання 7//
+
   function performOperation(operator, x, y) {
     let result;
   
@@ -133,25 +131,21 @@ function eatFood(hamburger, fries) {
         return;
     }
   
-    console.log('Результат: ' + result);
+
   }
   
-  let operator = '-';
-  let x = 10;
-  let y = 5;
-  performOperation(operator, x, y);
+  console.log(performOperation(-, 10, 8));
   
   
   // Завдання 8
   function removeVowelsFromString(word) {
     let vowelsRegex = /[aeiou]/gi;
     let result = word.replace(vowelsRegex, '');
-  
-    console.log('Результат: ' + result);
-  }
-  
-  let word = 'Hello world';
-  removeVowelsFromString(word);
+    
+    return result;
+    }
+    
+    console.log('Результат: ' + removeVowelsFromString('Hello world'));
   
   
   // Завдання 9
@@ -170,8 +164,7 @@ function eatFood(hamburger, fries) {
     console.log(result);
   }
   
-  let meters = 4000;
-  convertMetersToKilometers(meters);
+  convertMetersToKilometers(4000);
   
   
   
